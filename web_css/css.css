@@ -1,0 +1,147 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Helvatica Neue', sans-serif;
+}
+
+body{
+  margin: 0 ;
+  padding: 0;
+  background-color: #282923;
+  color:#747766;
+  text-align: center;
+ }
+.text{
+  margin:10px;
+  text-align: justify;
+  position: relative;
+  top:90px;
+}
+
+.game{
+  position: relative;
+  top:90px;
+}
+
+a{
+  text-decoration: none;
+}
+.display{
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  background:url(https://www.iphones.ru/wp-content/uploads/2018/08/world_of_tanks_wot_t_95_101146_1920x1080-1240x630.jpg)center no-repeat;
+  background-size:cover;
+  position: relative;
+  top:90px;
+}
+
+.slayder{
+  width: 500px;
+  height: 300px;
+  position: relative;
+  background-color: #181915;
+  border:0px;
+  outline: none;
+  border-radius: 20px;
+  color:#54564A;
+}
+.img{
+  width: 480px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.menu{
+  width: 100%;
+  min-height: 10vh;
+  background-color:#42443A; 
+  position: fixed;
+  display: flex;
+  z-index: 1;
+}
+
+.fg{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:300px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+      
+       
+    
+    }
+    .fg.active{
+       background-color:#181915;
+    }
+    li{
+      list-style:none;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      color:#747766;
+    }
+    h1{
+    position: absolute;
+    left: 100px;
+    }
+    .hi{
+      width: 100%;
+      position: relative;
+      top:100px;
+      text-align: left;
+      transition: all .5s;
+      transform: scale(0);
+    } 
+    .fg.active .hi{
+      transform: scale(1);
+    }
+    .hi li {
+      display: block;
+      font-size: 30px;
+      font-weight: 700;
+      color:#fff;
+      transition: .5s;
+      padding: 20px;
+    }
+    .hi li:hover{
+      background-color: rgba(255,255,255,.1);
+    }
+    .pa{
+      position: fixed;
+      top: 20px;
+      left: 20px;
+           
+          
+      z-index: 1;
+      cursor:pointer;
+      transition: .5s;
+      color:#fff;
+      font-size: 3px;
+    }
+    .pa:hover{
+      opacity: 0.7;
+    }
+        .op{
+          background-color: #fff;
+        }
+        .vb{
+          outline: none;
+          width: 80%;
+        }
+@media screen and (max-width: 500px){
+  .slayder{
+     width: 250px;
+     height: 160px;
+     border-radius:10px;
+  }
+  .img{
+    width: 240px;
+    height: 110px;
+    padding-top: 5px;
+  }
+}
